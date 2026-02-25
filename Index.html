@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wildan Tech</title>
+
+<style>
+
+/* AUTO DARK MODE */
+:root {
+--bg:#ffffff;
+--text:#111;
+--card:#f1f1f1;
+--neon:#00f7ff;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--bg:#0a0a0a;
+--text:#ffffff;
+--card:#111111;
+--neon:#00f7ff;
+}
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:Segoe UI,Arial;
+text-align:center;
+padding-top:50px;
+transition:0.3s;
+}
+
+/* PROFILE */
+
+img{
+width:120px;
+border-radius:50%;
+border:3px solid var(--neon);
+box-shadow:0 0 20px var(--neon);
+margin-bottom:10px;
+}
+
+/* NAME */
+
+h1{
+margin:5px;
+text-shadow:0 0 10px var(--neon);
+}
+
+p{
+opacity:0.7;
+}
+
+/* BUTTON */
+
+.link{
+
+display:block;
+
+width:260px;
+
+margin:15px auto;
+
+padding:15px;
+
+text-decoration:none;
+
+color:white;
+
+background:var(--card);
+
+border-radius:12px;
+
+border:1px solid var(--neon);
+
+transition:0.3s;
+
+}
+
+/* NEON HOVER */
+
+.link:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+0 0 10px var(--neon),
+0 0 20px var(--neon),
+0 0 40px var(--neon);
+
+}
+
+/* SMOOTH LOAD */
+
+body{
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<img src="foto.jpg">
+
+<h1>Wildan Tech</h1>
+
+<p>Web Developer • Linux • Proxmox</p>
+
+
+<a class="link" href="#">
+🌐 Portfolio
+</a>
+
+<a class="link" href="#">
+💻 Github
+</a>
+
+<a class="link" href="#">
+📂 Projects
+</a>
+
+<a class="link" href="#">
+📞 WhatsApp
+</a>
+
+</body>
+
+</html>
